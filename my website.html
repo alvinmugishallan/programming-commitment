@@ -4,20 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PERSONAL WEBSITE</title>
-</head>
-<h1>WHO AM I ?</h1>
-<p>MY NAME IS MUGISHA ALVIN ALLAN </p>
-<p>I study Information Technology and i am a first year at Uganda Christian Unviersity . I am currently in my second semester.
-    I love technology and innovation thus why i decided to pursue this course.</p>
-<p>This website was created to introduce myself and reveal my academic background and interests </p>
+    <style>
+         body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: lightblue;
+            color: #333;
+        }
+        header {
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
 
-<h2>ACADEMIC BACKGROUND  </h2>
-<P>I studied at Kabojja Junior school from p1-p7,i achieved division 1 in my PLE results.I then went to seeta for my o level.
-    I wasnt comfrotable there so i changed schs to Taibah International were i finished my o level.
-    I decided to go to Ligh Academy to do my a level where i achieved 3 principles 
-</P>
-<p></p>
+        }
+    header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 1rem ;
+        }
+
+       nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold; 
+        }
+        section{
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        h2 {
+            color: #4a90e2;
+            border-bottom:2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .project {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 calc(45% - 1rem);
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        a {
+            color: #4a90e2;
+        }
+    </style>
+</head>
 <body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/109632634?v=4" alt="Profile Picture">
+        <h1>MUGISHA ALVIN ALLAN</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>WHO AM I ?</h2>
+    <p>MY NAME IS MUGISHA ALVIN ALLAN </p>
+    <p>I study Information Technology and i am a first year at Uganda Christian Unviersity . I am currently in my second semester.
+    I love technology and innovation thus why i decided to pursue this course.</p>
+    <p>This website was created to introduce myself and reveal my academic background and interests </p>
+ <p><strong>Academic Background:</strong></p>
+        <ul>
+            <li>Kabojja Junior School (P1–P7) – Division 1 in PLE</li>
+            <li>Seeta & Taibah International – O Level</li>
+            <li>Light Academy – A Level (3 Principle Passes)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>MY PROJECTS</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1: Personal Blog</h3>
+                <p>A simple blog website where I share my thoughts on technology and programming.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Portfolio Website</h3>
+                <p>A portfolio showcasing my projects and skills in web development.</p>
+            </div>
+        <div class="project">
+                <h3>Project 3:QUALITY JUICE MAKERS WEBSITE</h3>
+                <p>My project was to creatre a website to help design for a local business a website to advertise its products which were premium juices 
+                and also to help the business reach more customers through online presence.</p>
+                </p>
+                <p>A basic to-do list application to help users manage their tasks efficiently.</p>
+            </div>
+        </div>
+    </section>
     
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+        <p>You can reach me via email at: <a href="mailto:mugisha.alvin@example.com">mugisha.alvin@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/alvinmugishallan" target="_blank">github.com/alvinmugishallan</a></p>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mugisha Alvin Allan | Portfolio Website</p>
+    </footer>
+
 </body>
-</html>
+</html>    
