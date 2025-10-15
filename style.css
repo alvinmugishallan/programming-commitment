@@ -1,75 +1,115 @@
-body{
-    font-family: Verdana;
-    margin:0;
-    padding:0;
-    line-height: 1.6;
-    background-color:lightblue;
-    color:#0f0303;
-}
-header{
-   background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem; 
-}
-header img{
-    width:150px;
-    height:auto;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-top: 1rem;
-}
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold; 
-}
-nav a:hover {
-    color: #00b4d8;
-}
-section{
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-h2 {
-    color: #00b4d8;
-    border-bottom:2px solid #ddd;
-    padding-bottom: 0.5rem;
-}
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-.project {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex: 1 1 calc(45% - 1rem);
-    transition: all 0.3s ease;
-}
-.project:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border: 1px solid #00b4d8;
-}
-footer {
-    text-align: center;
-    background: #0a2540;
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
+ /* styles.css - Custom styles for your portfolio */
+
+/* 1. Global Styles: Set a consistent theme for the whole site */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    line-height: 1.6; /* Improved readability */
+    color: #333; /* Dark gray text for better contrast */
+    background-color: #f8f9fa; /* Light background, similar to Bootstrap's default */
+    margin: 0;
+    padding: 0;
 }
 
-a {
-    color: #00b4d8;
- }
- a:hover {
-    color: #0077b6;
- }
+/* 2. Header and Navigation Styles: For the navbar on all pages */
+header {
+    padding: 20px;
+    text-align: center;
+}
+img.profile-pic {
+    border:2px solid #007bff; /* Blue border to match the theme */
+    border-radius: 50%; /* Circular profile picture */
+    width: 300px;
+    height: 300px;
+
+    object-fit:cover; /* Ensure the image covers the area */
+    display:block;
+    margin: 0 auto; /* Center the image */  
+}
+@media (max-width: 768px) {
+    img.profile-pic {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+.navbar {
+    background-color: #007bff; /* Custom blue color for the navbar */
+}
+
+.navbar a {
+    color: #fff; /* White text for links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Gold color on hover for a nice effect */
+}
+
+/* 3. Styles for Projects Page: Target the cards */
+.card {
+    border: none; /* Remove default border for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease; /* Hover animation */
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.card-title {
+    color: #007bff; /* Blue color for card titles to match the theme */
+}
+
+.list-group-item {
+    background-color: #e9ecef; /* Light gray background for lists in cards */
+}
+
+/* 4. Styles for Contacts Page: Enhance the form */
+form label {
+    font-weight: bold; /* Bold labels for clarity */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ced4da; /* Light border */
+}
+
+.form-control:focus {
+    border-color: #3b4f64; /* Blue border on focus for better UX */
+    box-shadow: 0 0 5px rgba(20, 93, 170, 0.25); /* Subtle glow */
+}
+
+.btn-primary {
+    background-color: #79b3f1; /* Ensure it matches your theme */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5c82ac; /* Darker blue on hover */
+}
+
+/* 5. Responsive Styles: Add custom media queries for mobile adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px; /* Reduce padding on smaller screens */
+    }
+    
+    .card {
+        margin-bottom: 20px; /* Add space between cards on mobile */
+    }
+    
+    form {
+        width: 100%; /* Make forms full-width on mobile */
+    }
+}
+
+/* 6. Additional Custom Styles: For any other elements, like buttons or links */
+a.btn {
+    margin: 5px; /* Spacing for buttons, e.g., social links */
+}
+
+footer {
+    background-color: #f1f1f1; /* If you add a footer, style it lightly */
+    padding: 20px;
+    text-align: center;
+}
