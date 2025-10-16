@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">  <!-- My custom CSS file -->
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>MY PROJECTS</h1>
+    </header>
+
+    <main class="container mt-4">  <!-- Main content container for responsiveness -->
+        <section id="projects-section" class="row">  <!-- Semantic section with Bootstrap grid -->
+            <h2 class="text-center mb-4">My Featured Projects</h2>
+            <!-- Project Cards -->
+            <div class="col-md-4 mb-4">  <!-- First card, adjusts for different screen sizes -->
+                <div class="card h-100 shadow-sm">  <!-- h-100 for equal height, shadow for styling -->
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1: Simple Website</h5>
+                        <p class="card-text">A responsive website built with HTML, CSS, and Bootstrap. It showcases my  web design skills.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">  <!-- Second card -->
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2: Python Script</h5>
+                        <p class="card-text">A Python program for data analysis, using programs to calculate and manipulate users' data.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">  <!-- Third card -->
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3: React App</h5>
+                        <p class="card-text">A single-page React application for task management, including state management.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  <!-- Include Bootstrap JS for navbar functionality -->
+</body>
+</html>
