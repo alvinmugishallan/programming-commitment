@@ -17,7 +17,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
@@ -31,39 +31,54 @@
     <main class="container mt-4">  <!-- Main content container for responsiveness -->
         <section id="projects-section" class="row">  <!-- Semantic section with Bootstrap grid -->
             <h2 class="text-center mb-4">My Featured Projects</h2>
-            <!-- Project Cards -->
-            <div class="col-md-4 mb-4">  <!-- First card, adjusts for different screen sizes -->
-                <div class="card h-100 shadow-sm">  <!-- h-100 for equal height, shadow for styling -->
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1: Simple Website</h5>
-                        <p class="card-text">A responsive website built with HTML, CSS, and Bootstrap. It showcases my  web design skills.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
+            
+        <!-- Bootstrap carousel for dynamic project showcase -->
+<div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+       <div class="carousel-indicators">
+    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"></button>
+</div> 
+        <div class="carousel-item active">
+            <img src="Snapchat-1160037703.jpg" class="d-block w-100" alt="Project 1: Simple Website" style="height: 400px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.6); color: white; padding: 10px; border-radius: 5px;">
+            <h5>Project 1: Simple Website</h5>
+            <p>A responsive website built with HTML, CSS, and Bootstrap. It showcases my web design skills.</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+        </div>    
+        </div>
+        <div class="carousel-item">
+            <img src="Screenshot 2025-10-19 091203.png" class="d-block w-100" alt="Project 2: Python Script" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Project 2: Python Script</h5>
+                <p>A Python program for data analysis, using programs to calculate and manipulate users' data.</p>
+                <a href="#" class="btn btn-primary">View Details</a>
             </div>
+        </div>
+        <div class="carousel-item">
+        <img src="mysql.png" class="d-block w-100" alt="Project 3: Database System" style="height:400px; object-fit:cover;">
+         <div class="carousel-caption d-none d-md-block">
+        <h5>Project 3: Registration System</h5>
+        <p>My Current project is to create a database system built using MySQL to help manage user registrations and data.</p>
+    <a href="#" class="btn btn-primary">View Details</a>
+  </div>
+</div>
 
-            <div class="col-md-4 mb-4">  <!-- Second card -->
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2: Python Script</h5>
-                        <p class="card-text">A Python program for data analysis, using programs to calculate and manipulate users' data.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">  <!-- Third card -->
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3: React App</h5>
-                        <p class="card-text">A single-page React application for task management, including state management.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
+<!-- Additional Buttons-->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  <!-- Include Bootstrap JS for navbar functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  <!-- Included Bootstrap JS for navbar functionality -->
 </body>
 </html>
