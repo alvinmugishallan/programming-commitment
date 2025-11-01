@@ -1,0 +1,2 @@
+SHOW TABLES;
+INSERT INTO computer
