@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fresh Mango Juice — Recipe & Benefits</title>
+<style>
+:root{--bg:#fff7e6;--accent:#ff9800;--card:#fff;--text:#333}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:var(--text)}
+header{background:var(--accent);color:#fff;padding:18px 20px;text-align:center}
+.container{max-width:900px;margin:20px auto;padding:0 20px}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+h1{margin:0 0 8px;font-size:1.6rem}
+p.lead{margin:0 0 12px;opacity:.9}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+img{width:100%;border-radius:10px;display:block}
+ul{padding-left:1.1rem}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:none;cursor:pointer}
+footer{text-align:center;margin:18px 0;color:#666;font-size:.9rem}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="container"><h2>Fresh Mango Juice</h2><div>Simple recipe, nutrition facts, and tips</div></div></header>
+<main class="container">
+<section class="card" aria-labelledby="intro">
+<h1 id="intro">Why mango juice?</h1>
+<p class="lead">Mangoes are rich in vitamin C, beta-carotene, and natural sweetness — perfect for a quick energizing drink.</p>
+<div class="grid">
+<div>
+<h3>Ingredients</h3>
+<ul>
+<li>2 ripe mangoes (peeled & cubed)</li>
+<li>1 cup cold water or coconut water</li>
+<li>1 tbsp honey or to taste (optional)</li>
+<li>Ice cubes and a squeeze of lime</li>
+</ul>
+<h3>Directions</h3>
+<ol>
+<li>Blend mango cubes and water until smooth.</li>
+<li>Sweeten with honey if desired, add lime and ice, then blend briefly.</li>
+<li>Strain for smoother texture or enjoy as is.</li>
+</ol>
+</div>
+<aside class="card" style="padding:12px">
+<img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=800&q=60" alt="Fresh mango juice">
+<p style="margin:10px 0 0;font-size:.95rem">Tip: Use chilled mango and keep portions small to retain freshness.</p>
+</aside>
+</div>
+</section>
+<section class="card" style="margin-top:16px" aria-labelledby="benefits">
+<h3 id="benefits">Health benefits</h3>
+<p>Mango juice provides antioxidants, supports immunity, and can be a healthy alternative to sugary drinks when prepared at home.</p>
+<button class="btn" id="calcBtn">Quick calories estimate</button>
+<div id="result" style="margin-top:12px"></div>
+</section>
+</main>
+<footer>Made with love — try the recipe and enjoy! 🍹</footer>
+<script>
+document.getElementById('calcBtn').addEventListener('click',function(){
+const cups=1.5;
+const kcalPerCup=99;
+const total=Math.round(cups*kcalPerCup);
+document.getElementById('result').textContent=`Estimated calories: ${total} kcal per batch.`;
+});
+</script>
+</body>
+</html>
