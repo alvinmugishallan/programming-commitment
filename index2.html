@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Bible Verse Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 25px;
+      width: 350px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #444;
+    }
+
+    #verse-box {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      min-height: 80px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Random Bible Verse</h1>
+
+    <div id="verse-box">Click the button to get a verse</div>
+
+    <button onclick="generateVerse()">Generate Verse</button>
+  </div>
+
+  <script>
+    const verses = [
+      "Philippians 4:13 – I can do all things through Christ who strengthens me.",
+      "Jeremiah 29:11 – For I know the plans I have for you, declares the Lord.",
+      "Psalm 23:1 – The Lord is my shepherd; I shall not want.",
+      "Isaiah 41:10 – Fear not, for I am with you.",
+      "Romans 8:28 – All things work together for good for those who love God.",
+      "Proverbs 3:5 – Trust in the Lord with all your heart.",
+      "John 3:16 – For God so loved the world...",
+      "Psalm 46:10 – Be still, and know that I am God."
+    ];
+
+    function generateVerse() {
+      const randomIndex = Math.floor(Math.random() * verses.length);
+      document.getElementById("verse-box").innerText = verses[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
