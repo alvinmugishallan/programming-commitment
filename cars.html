@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoDrive — Cars & Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">AutoDrive</h1>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#models">Models</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h2>Find your next ride</h2>
+        <p>Latest models, honest reviews, and practical buying tips — all in one place.</p>
+        <a class="btn" href="#models">Browse Models</a>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <!-- Decorative placeholder — replace with an image if you want -->
+        <div class="car-graphic">🚗</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="models" class="section models-section">
+    <div class="container">
+      <h2>Popular Models</h2>
+      <p class="muted">A quick look at some popular choices across categories.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>City Compact</h3>
+          <p class="price">From $18,500</p>
+          <p>Small, efficient, and perfect for city driving with great fuel economy.</p>
+          <ul class="features">
+            <li>Automatic</li>
+            <li>5 seats</li>
+            <li>Fuel: Petrol / Hybrid</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Family SUV</h3>
+          <p class="price">From $32,000</p>
+          <p>Spacious interior, modern safety features, and comfort for long trips.</p>
+          <ul class="features">
+            <li>7 seats (optional)</li>
+            <li>All-wheel drive</li>
+            <li>Advanced safety</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Sport Coupe</h3>
+          <p class="price">From $45,500</p>
+          <p>Performance-focused, sharp handling, and a head-turning design.</p>
+          <ul class="features">
+            <li>Manual or automatic</li>
+            <li>2-door</li>
+            <li>Turbocharged engine</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <h2>Recent Reviews</h2>
+      <div class="review-list">
+        <div class="review">
+          <h4>City Compact — 4.2/5</h4>
+          <p>Great for daily commutes. Low running costs; small trunk but excellent urban agility.</p>
+        </div>
+        <div class="review">
+          <h4>Family SUV — 4.6/5</h4>
+          <p>Comfortable and safe. Infotainment could be faster — otherwise a strong family choice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Contact AutoDrive</h3>
+        <p class="muted">Have questions or want a test drive? Send us a message.</p>
+        <p>Email: <a href="mailto:info@autodrive.example">info@autodrive.example</a></p>
+      </div>
+      <div class="small-print">
+        <p>© <span id="year"></span> AutoDrive. Built with ❤️ for car lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small inline script to set current year — optional and safe
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
