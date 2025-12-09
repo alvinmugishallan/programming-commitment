@@ -1,0 +1,52 @@
+// Parent class (Superclass)
+class Person {
+    private String name;
+    private int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getters (Encapsulation)
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    // Method (polymorphism - will be overridden)
+    public void introduce() {
+        System.out.println("I am a person.");
+    }
+}
+
+// Child class (Subclass)
+class Student extends Person {
+    private String course;
+
+    public Student(String name, int age, String course) {
+        super(name, age); // calling parent constructor
+        this.course = course;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    // Method overriding (polymorphism)
+    @Override
+    public void introduce() {
+        System.out.println("I am " + getName() + ", " + getAge() +
+                " years old and I study " + course + ".");
+    }
+}
+
+// Another child class
+class Teacher extends Person {
+    private String subject;
+
+    public Teacher(String name,
